@@ -64,7 +64,7 @@
             <h1 style=";color: rgb(22, 212, 167); text-align: right;padding-left:0;margin-left:0;">deploying early and
                 often</h1>
 
-            <h3 style="color: rgb(22, 212, 167)">from traffic signals to PSUs</h3>
+            <h3 style="color: rgb(22, 212, 167)">from traffic signals to CMAs</h3>
             <!--<h5>February 6<sup>th</sup> - 8<sup>th</sup>, 2015</h5>-->
         </div>
         <div class="col-lg-12" style="text-align:center; color:rgb(22,212,167)">
@@ -108,47 +108,39 @@
                     <h1>who survived the titanic?</h1>
 
                     <div class="hline"></div>
+                    <h2>
+
+                        Kaggle's titanic survivor lesson
+                    </h2>
                     <ul style="padding-left: 25px">
                         <h3>
                             <li>
-                                Kaggle's titanic survivor lesson
+                                Gender, Price and Class Based Model
+                                <ul style="margin-left:25px">
+                                    <li>Accuracy: <strong style="font-size:.9em">0.77990</strong></li>
+                                    <li>Method: Survivor Table</li>
+                                </ul>
                             </li>
-                        </h3>
-                        <ul style="padding-left: 25px">
-                            <h4>
-                                <li>
-                                    Gender, Price and Class Based Model
-                                    <ul style="margin-left:25px">
-                                        <li>Accuracy: <strong style="font-size:.9em">0.77990</strong></li>
-                                        <li>Method: Survivor Table</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Generic Random Forest
-                                    <ul style="margin-left:25px">
-                                        <li>Accuracy: <strong style="font-size:.9em">0.77512</strong></li>
-                                        <li>Method: Machine Learning</li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    Gender Based Model
-                                    <ul style="margin-left:25px">
-                                        <li>Accuracy: <strong style="font-size:.9em">0.76555</strong></li>
-                                        <li>Method: Single Categorical Variable</li>
-                                    </ul>
-                                </li>
-                            </h4>
-                        </ul>
-                        <h3>
                             <li>
-                                <h3>From Zillow's Chief Economist:</h3>
-
-                                <h3 style="text-align:center"><em>...gigantic [housing] models really weren't the best
-                                    approach. Instead, we found that we could actually get much more accurate data by
-                                    deploying a lot of relatively simple models.</em></h3>
+                                Generic Random Forest
+                                <ul style="margin-left:25px">
+                                    <li>Accuracy: <strong style="font-size:.9em">0.77512</strong></li>
+                                    <li>Method: Machine Learning</li>
+                                </ul>
+                            </li>
+                            <li>
+                                Gender Based Model
+                                <ul style="margin-left:25px">
+                                    <li>Accuracy: <strong style="font-size:.9em">0.76555</strong></li>
+                                    <li>Method: Single Categorical Variable</li>
+                                </ul>
                             </li>
                         </h3>
                     </ul>
+                    <h2>From Zillow's Chief Economist</h2>
+                    <h3 style="text-align:center"><em>...gigantic [housing] models really weren't the best
+                        approach. Instead, we found that we could actually get much more accurate data by
+                        deploying a lot of relatively simple models.</em></h3>
                 </div>
                 <div class="col-lg-12" style="text-align:center">
                     <div style="margin:65px 0 0 0">
@@ -168,7 +160,7 @@
         <div id="slide2" class="container mtb" style="margin-top:30px;">
             <div class="row">
                 <div class="col-sm-12">
-                    <h1>where are the traffic signals and street lamps?</h1>
+                    <h1>an unusual request</h1>
 
                     <div class="hline"></div>
                 </div>
@@ -177,10 +169,80 @@
 
                     <h3>
                         <ul style="padding-left: 25px">
-                            <li>predict the locations of all traffic signals and streetlamps in a given CMA</li>
-                            <li>a verified asset must be found within a 0.2581 mile radius at least 75% of the time</li>
+                            <li>where are all the traffic signals and streetlamps in multiple CMAs?</li>
                         </ul>
                     </h3>
+                    <h2>the requirements</h2>
+                    <h3>
+                        <ul style="padding-left: 25px">
+                            <li>provide exact locations</li>
+                            <li>at least 75% accurate</li>
+                            <li>must use one model for all CMAs</li>
+                            <li>need to begin modelling in one week</li>
+                        </ul>
+                    </h3>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="http://mrwgifs.com/wp-content/uploads/2013/05/Mark-Wahlberg-Confused-In-The-Happening.gif">
+                </div>
+                <div class="col-lg-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide3" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 3
+     ***************************************************************************************************************** -->
+    <section id="section4">
+        <div id="slide3" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h1>to give you a sense of context</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-6">
+                    <h2>this is the DC CMA</h2>
+                    <img class="img-responsive" src="assets/img/dc.jpg">
+
+                </div>
+                <div class="col-sm-6">
+                    <h2>this is an accuracy check for Minneapolis</h2>
+                    <img class="img-responsive" src="assets/img/minn.jpg">
+
+                </div>
+                <div class="col-lg-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide3" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 3
+     ***************************************************************************************************************** -->
+    <section id="section5">
+        <div id="slide4" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>the response</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-6">
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/maybe_short.gif">
+                </div>
+                <div class="col-sm-6">
                     <h2>the model</h2>
                     <ul style="padding-left: 25px">
                         <h3>
@@ -207,6 +269,30 @@
                             </ul>
                         </h3>
                     </ul>
+                </div>
+                <div class="col-lg-12" style="text-align:center">
+                    <div style="margin:65px 0 0 0">
+                        <a href="#slide4" class="fa fa-arrow-circle-down fa-5x"></a>
+                    </div>
+                </div>
+            </div>
+            <! --/row -->
+        </div>
+        <! --/container -->
+    </section>
+
+    <!-- *****************************************************************************************************************
+     SLIDE 4
+     ***************************************************************************************************************** -->
+    <section id="section6">
+        <div id="slide5" class="container mtb" style="margin-top:30px;">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1>the results</h1>
+
+                    <div class="hline"></div>
+                </div>
+                <div class="col-sm-6">
                     <h2>the results</h2>
                     <ul style="padding-left: 25px">
                         <h3>
@@ -223,93 +309,8 @@
                     </ul>
                 </div>
                 <div class="col-sm-6">
-                    <img class="img-responsive" src="assets/img/dc.png">
-                </div>
-                <div class="col-lg-12" style="text-align:center">
-                    <div style="margin:65px 0 0 0">
-                        <a href="#slide3" class="fa fa-arrow-circle-down fa-5x"></a>
-                    </div>
-                </div>
-            </div>
-            <! --/row -->
-        </div>
-        <! --/container -->
-    </section>
-
-    <!-- *****************************************************************************************************************
-     SLIDE 3
-     ***************************************************************************************************************** -->
-    <section id="section4">
-        <div id="slide3" class="container mtb" style="margin-top:30px;">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>how can we enable geospatial tech?</h1>
-
-                    <div class="hline"></div>
-                </div>
-                <div class="col-sm-12">
-                    <ul style="padding-left: 25px">
-                        <h3>
-                            <li>
-                                the census bureau had the software but not the time or expertise to use it
-                            </li>
-                        </h3>
-                        <ul style="padding-left: 25px">
-                            <h4>
-                                <li>
-                                    Auto ownership cost = auto/HH * cost per auto
-                                </li>
-                                <li>
-                                    Auto usage cost = annual VMT * cost per mile
-                                </li>
-                            </h4>
-                        </ul>
-                        <h3>
-                            <li>
-                                <a href="http://www.locationaffordability.info/About_Data.aspx#CalculatingTrans">
-                                    More detail on annual transit trips and costs
-                                </a>
-                            </li>
-                        </h3>
-                    </ul>
-                </div>
-                <div class="col-lg-12" style="text-align:center">
-                    <div style="margin:65px 0 0 0">
-                        <a href="#slide4" class="fa fa-arrow-circle-down fa-5x"></a>
-                    </div>
-                </div>
-            </div>
-            <! --/row -->
-        </div>
-        <! --/container -->
-    </section>
-
-    <!-- *****************************************************************************************************************
-     SLIDE 4
-     ***************************************************************************************************************** -->
-    <section id="section5">
-        <div id="slide4" class="container mtb" style="margin-top:30px;">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1>how can we look good in front of zillow?</h1>
-
-                    <div class="hline"></div>
-                </div>
-                <div class="col-sm-12">
-                    <ul style="padding-left: 25px">
-                        <h3>
-                            <li>
-                                HUD was invited to participate in a Zillow Hackathon
-                            </li>
-                        </h3>
-                        <h3>
-                            <li>
-                                <a href="http://hudegis.github.io">
-                                    they needed to provide apis to their datasets in a 'hacker-friendly' way
-                                </a>
-                            </li>
-                        </h3>
-                    </ul>
+                    <img class="img-responsive" style="margin:70px auto 0 auto" src="assets/img/ballet.gif">
+                    <!--<img class="img-responsive" style="border:solid rgb(22, 212, 167); margin:70px auto 0 auto" src="assets/img/minn.jpg">-->
                 </div>
                 <div class="col-lg-12" style="text-align:center">
                     <div style="margin:65px 0 0 0">
@@ -326,8 +327,8 @@
     <!-- *****************************************************************************************************************
      SLIDE 5
      ***************************************************************************************************************** -->
-    <section id="section6">
-        <div id="slide5" class="container mtb" style="margin-top:30px;">
+    <section id="section7">
+        <div id="slide6" class="container mtb" style="margin-top:30px;">
             <div class="row">
                 <div class="col-lg-12">
                     <h1>The common threads</h1>
@@ -383,7 +384,7 @@
     <!-- *****************************************************************************************************************
      FOOTER
      ***************************************************************************************************************** -->
-    <section id="section7">
+    <section id="section8">
         <div id="footerwrap">
             <div class="container">
                 <div class="row">
@@ -585,6 +586,7 @@
             scrollToAnchor($("#section" + i + ""));
         }
     });
+
 </script>
 </body>
 </html>
